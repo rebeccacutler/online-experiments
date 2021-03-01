@@ -10,3 +10,7 @@ current templates:
 - recording keypresses, textboxes, dropdown options, precise RTs   
 
 demo can be run locally by opening index.html
+
+study-practice-test-example.json 
+- full experiment with 3 phases
+
