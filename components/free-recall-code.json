@@ -1,0 +1,259 @@
+{
+  "components": {
+    "68": {
+      "id": "68",
+      "type": "lab.flow.Loop",
+      "children": [
+        "69"
+      ],
+      "templateParameters": {
+        "columns": [
+          {
+            "name": "n_recall",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          [
+            "1"
+          ],
+          [
+            "2"
+          ],
+          [
+            "3"
+          ],
+          [
+            "4"
+          ],
+          [
+            "5"
+          ],
+          [
+            "6"
+          ],
+          [
+            "7"
+          ],
+          [
+            "8"
+          ],
+          [
+            "9"
+          ],
+          [
+            "10"
+          ],
+          [
+            "11"
+          ],
+          [
+            "12"
+          ],
+          [
+            "13"
+          ],
+          [
+            "14"
+          ],
+          [
+            "15"
+          ],
+          [
+            "16"
+          ],
+          [
+            "17"
+          ],
+          [
+            "18"
+          ],
+          [
+            "19"
+          ],
+          [
+            "20"
+          ],
+          [
+            "21"
+          ],
+          [
+            "22"
+          ],
+          [
+            "23"
+          ],
+          [
+            "24"
+          ],
+          [
+            "25"
+          ],
+          [
+            "26"
+          ],
+          [
+            "27"
+          ]
+        ]
+      },
+      "sample": {
+        "mode": "sequential"
+      },
+      "files": [],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "recall-loop",
+      "_tab": "Content",
+      "timeout": "15000"
+    },
+    "69": {
+      "id": "69",
+      "type": "lab.flow.Sequence",
+      "children": [
+        "70"
+      ],
+      "files": [],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "recall-sequence"
+    },
+    "70": {
+      "id": "70",
+      "type": "lab.html.Form",
+      "scrollTop": true,
+      "files": [],
+      "responses": [
+        {
+          "label": "enter_recall",
+          "event": "keypress",
+          "target": "",
+          "filter": "enter"
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "recall-list",
+      "timeout": "",
+      "_tab": "Content",
+      "content": "<main>\n  <form>\n    <p style=\"font-size:20px\">Please type the words that you can remember. Press ENTER to submit a word</p>\n    <input name=\"recall\" type=\"text\" autocomplete=\"off\" autofocus=\"autofocus\" style=\"width: 300px;>\n    <button style=”width: 600px; type=\"submit\">\n      \n    </button>\n  </form>\n</main>"
+    },
+    "root": {
+      "id": "root",
+      "title": "root",
+      "type": "lab.flow.Sequence",
+      "children": [
+        "68"
+      ],
+      "parameters": [],
+      "plugins": [
+        {
+          "type": "lab.plugins.Metadata"
+        }
+      ],
+      "metadata": {
+        "title": "",
+        "description": "",
+        "repository": "",
+        "contributors": ""
+      }
+    }
+  },
+  "version": [
+    20,
+    2,
+    2
+  ],
+  "files": {
+    "files": {
+      "index.html": {
+        "content": "data:text/html,%3C!doctype%20html%3E%0A%3Chtml%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EExperiment%3C%2Ftitle%3E%0A%20%20%3C!--%20viewport%20setup%20--%3E%0A%20%20%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%20initial-scale%3D1%22%3E%0A%20%20%3C!--%20lab.js%20library%20and%20experiment%20code%20--%3E%0A%20%20%24%7B%20header%20%7D%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%20%20%3C!--%20If%20you'd%20rather%20have%20a%20container%20with%20a%20fixed%20width%0A%20%20%20%20%20%20%20and%20variable%20height%2C%20try%20removing%20the%20fullscreen%20class%20below%20--%3E%0A%20%20%3Cdiv%20class%3D%22container%20fullscreen%22%20data-labjs-section%3D%22main%22%3E%0A%20%20%20%20%3Cmain%20class%3D%22content-vertical-center%20content-horizontal-center%22%3E%0A%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%3Ch2%3ELoading%20Experiment%3C%2Fh2%3E%0A%20%20%20%20%20%20%20%20%3Cp%3EThe%20experiment%20is%20loading%20and%20should%20start%20in%20a%20few%20seconds%3C%2Fp%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fmain%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E%0A",
+        "source": "library"
+      },
+      "style.css": {
+        "content": "data:text/css,%2F*%20Please%20define%20your%20custom%20styles%20here%20*%2F",
+        "source": "library"
+      },
+      "static/math_dist_3.csv": {
+        "content": "data:text/csv;base64,77u/bnVtMSxudW0yLG51bTMsYW5zd2VyLGNvcnJlY3QNCjEsMiwzLDYsVA0KMSwyLDQsNyxUDQoxLDIsNSw4LFQNCjEsMiw2LDksVA0KMSwzLDQsOCxUDQoxLDMsNSw5LFQNCjEsMyw2LDEwLFQNCjEsNCw1LDEwLFQNCjEsNCw2LDExLFQNCjEsNSw2LDEyLFQNCjIsMyw0LDksVA0KMiwzLDUsMTAsVA0KMiwzLDYsMTEsVA0KMiw0LDUsMTEsVA0KMiw0LDYsMTIsVA0KMiw1LDYsMTMsVA0KMyw0LDUsMTIsVA0KMyw0LDYsMTMsVA0KMyw1LDYsMTQsVA0KNCw1LDYsMTUsVA0KMiwzLDEsNixUDQoxLDIsNCw3LFQNCjIsMSw1LDgsVA0KMSw2LDIsOSxUDQo0LDEsMyw4LFQNCjMsMSw1LDksVA0KNiwxLDMsMTAsVA0KNSw0LDEsMTAsVA0KMSw0LDYsMTEsVA0KNiwxLDUsMTIsVA0KMyw0LDIsOSxUDQoyLDMsNSwxMCxUDQozLDYsMiwxMSxUDQo1LDIsNCwxMSxUDQo0LDIsNiwxMixUDQo1LDYsMiwxMyxUDQo1LDQsMywxMixUDQo2LDQsMywxMyxUDQo1LDYsMywxNCxUDQo1LDYsNCwxNSxUDQoyLDEsMyw2LFQNCjQsMSwyLDcsVA0KNSwyLDEsOCxUDQoyLDEsNiw5LFQNCjQsMSwzLDgsVA0KMywxLDUsOSxUDQo2LDEsMywxMCxUDQoxLDQsNSwxMCxUDQoxLDYsNCwxMSxUDQo1LDYsMSwxMixUDQo0LDIsMyw5LFQNCjIsMyw1LDEwLFQNCjIsNiwzLDExLFQNCjQsMiw1LDExLFQNCjYsMiw0LDEyLFQNCjIsNiw1LDEzLFQNCjQsMyw1LDEyLFQNCjQsNiwzLDEzLFQNCjUsNiwzLDE0LFQNCjQsNSw2LDE1LFQNCjEsMiwzLDgsRg0KMSwyLDQsOCxGDQoxLDIsNSw2LEYNCjEsMiw2LDcsRg0KMSwzLDQsMTAsRg0KMSwzLDUsMTEsRg0KMSwzLDYsMTIsRg0KMSw0LDUsOCxGDQoxLDQsNiwxMyxGDQoxLDUsNiwxMyxGDQoyLDMsNCw3LEYNCjIsMyw1LDEyLEYNCjIsMyw2LDEyLEYNCjIsNCw1LDEzLEYNCjIsNCw2LDEzLEYNCjIsNSw2LDE0LEYNCjMsNCw1LDEwLEYNCjMsNCw2LDExLEYNCjMsNSw2LDEzLEYNCjQsNSw2LDE2LEYNCjIsMywxLDcsRg0KMSwyLDQsOSxGDQoyLDEsNSw2LEYNCjEsNiwyLDEwLEYNCjQsMSwzLDksRg0KMywxLDUsMTAsRg0KNiwxLDMsOSxGDQo1LDQsMSw5LEYNCjEsNCw2LDEwLEYNCjYsMSw1LDE0LEYNCjMsNCwyLDgsRg0KMiwzLDUsMTIsRg0KMyw2LDIsMTAsRg0KNSwyLDQsMTIsRg0KNCwyLDYsMTEsRg0KNSw2LDIsMTQsRg0KNSw0LDMsMTQsRg0KNiw0LDMsMTIsRg0KNSw2LDMsMTIsRg0KNSw2LDQsMTYsRg0KMiwxLDMsNCxGDQo0LDEsMiw1LEYNCjUsMiwxLDEwLEYNCjIsMSw2LDExLEYNCjQsMSwzLDEwLEYNCjMsMSw1LDExLEYNCjYsMSwzLDksRg0KMSw0LDUsOSxGDQoxLDYsNCw5LEYNCjUsNiwxLDEwLEYNCjQsMiwzLDgsRg0KMiwzLDUsMTIsRg0KMiw2LDMsOSxGDQo0LDIsNSwxMCxGDQo2LDIsNCwxNCxGDQoyLDYsNSwxMSxGDQo0LDMsNSwxMCxGDQo0LDYsMywxMixGDQo1LDYsMywxMyxGDQo0LDUsNiwxNCxG",
+        "source": "embedded-global",
+        "checkSum": "e943be34f284691c109c00f51c403ded3cb105a7c32a3cd7fb2ff07d55fd95ca"
+      }
+    },
+    "bundledFiles": {
+      "lib/lab.js": {
+        "type": "application/javascript"
+      },
+      "lib/lab.js.map": {
+        "type": "text/plain"
+      },
+      "lib/lab.fallback.js": {
+        "type": "application/javascript"
+      },
+      "lib/lab.legacy.js": {
+        "type": "application/javascript"
+      },
+      "lib/lab.legacy.js.map": {
+        "type": "text/plain"
+      },
+      "lib/lab.css": {
+        "type": "text/css"
+      },
+      "lib/loading.svg": {
+        "type": "image/svg+xml"
+      }
+    }
+  }
+}
